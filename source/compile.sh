@@ -1,6 +1,7 @@
 # Clone repository and get latest commit
 cd ${DATA_DIR}
-git clone https://github.com/MedicalFlyer/unraid-r8127-drivercd ${DATA_DIR}/unraid-r8125-r8152-driver
+git clone https://github.com/MedicalFlyer/unraid-r8127-driver
+cd ${DATA_DIR}/unraid-r8125-r8152-driver
 PLUGIN_VERSION="$(git log -1 --format="%cs" | sed 's/-//g')"
 git checkout main
 
@@ -28,7 +29,8 @@ tee $TMP_DIR/$VERSION/install/slack-desc <<EOF
        |-----handy-ruler------------------------------------------------------|
 $PLUGIN_NAME: $PLUGIN_NAME OOT driver by jinlife
 $PLUGIN_NAME:
-$PLUGIN_NAME: Source: https://github.com/MedicalFlyer/unraid-r8127-driver$PLUGIN_NAME:
+$PLUGIN_NAME: Source: https://github.com/MedicalFlyer/unraid-r8127-driver
+$PLUGIN_NAME:
 $PLUGIN_NAME: Custom $PLUGIN_NAME driver package for Unraid Kernel v${UNAME%%-*} by ich777
 $PLUGIN_NAME:
 EOF
@@ -60,7 +62,8 @@ tee $TMP_DIR/$VERSION/install/slack-desc <<EOF
        |-----handy-ruler------------------------------------------------------|
 $PLUGIN_NAME: $PLUGIN_NAME OOT driver by jinlife
 $PLUGIN_NAME:
-$PLUGIN_NAME: Source: https://github.com/MedicalFlyer/unraid-r8127-driver$PLUGIN_NAME:
+$PLUGIN_NAME: Source: https://github.com/MedicalFlyer/unraid-r8127-driver
+$PLUGIN_NAME:
 $PLUGIN_NAME: Custom $PLUGIN_NAME driver package for Unraid Kernel v${UNAME%%-*} by ich777
 $PLUGIN_NAME:
 $PLUGIN_NAME:
@@ -96,7 +99,8 @@ tee $TMP_DIR/$VERSION/install/slack-desc <<EOF
        |-----handy-ruler------------------------------------------------------|
 $PLUGIN_NAME: $PLUGIN_NAME OOT driver by jinlife
 $PLUGIN_NAME:
-$PLUGIN_NAME: Source: https://github.com/MedicalFlyer/unraid-r8127-driver$PLUGIN_NAME:
+$PLUGIN_NAME: Source: https://github.com/MedicalFlyer/unraid-r8127-driver
+$PLUGIN_NAME:
 $PLUGIN_NAME: Custom $PLUGIN_NAME driver package for Unraid Kernel v${UNAME%%-*} by ich777
 $PLUGIN_NAME:
 $PLUGIN_NAME:
@@ -132,7 +136,8 @@ tee $TMP_DIR/$VERSION/install/slack-desc <<EOF
        |-----handy-ruler------------------------------------------------------|
 $PLUGIN_NAME: $PLUGIN_NAME OOT driver by jinlife
 $PLUGIN_NAME:
-$PLUGIN_NAME: Source: https://github.com/MedicalFlyer/unraid-r8127-driver$PLUGIN_NAME:
+$PLUGIN_NAME: Source: https://github.com/MedicalFlyer/unraid-r8127-driver
+$PLUGIN_NAME:
 $PLUGIN_NAME: Custom $PLUGIN_NAME driver package for Unraid Kernel v${UNAME%%-*} by ich777
 $PLUGIN_NAME:
 $PLUGIN_NAME:
@@ -168,7 +173,8 @@ tee $TMP_DIR/$VERSION/install/slack-desc <<EOF
        |-----handy-ruler------------------------------------------------------|
 $PLUGIN_NAME: $PLUGIN_NAME OOT driver by jinlife
 $PLUGIN_NAME:
-$PLUGIN_NAME: Source: https://github.com/MedicalFlyer/unraid-r8127-driver$PLUGIN_NAME:
+$PLUGIN_NAME: Source: https://github.com/MedicalFlyer/unraid-r8127-driver
+$PLUGIN_NAME:
 $PLUGIN_NAME: Custom $PLUGIN_NAME driver package for Unraid Kernel v${UNAME%%-*} by ich777
 $PLUGIN_NAME:
 $PLUGIN_NAME:
